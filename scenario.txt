@@ -1,0 +1,50 @@
+###################################################### -*- mode: r -*- #####
+## Scenario setup for Iterated Race (irace).
+############################################################################
+
+## To use the default value of a parameter of iRace, simply do not set
+## the parameter (comment it out in this file, and do not give any
+## value on the command line).
+
+## Directory where the programs will be run.
+execDir = "./"
+
+## File that contains the description of the parameters of the target
+## algorithm.
+parameterFile = "./parameters.txt"
+
+
+## File that contains a table of initial configurations. If empty or NULL, all
+## initial configurations are randomly generated.
+configurationsFile = "./configurations.txt"
+
+## Directory where training instances are located; either absolute path or
+## relative to current directory. If no trainInstancesFiles is provided, all
+## the files in trainInstancesDir will be listed as instances.
+trainInstancesDir = ""
+
+## File that contains a list of training instances and optionally additional
+## parameters for them. If trainInstancesDir is provided, irace will search
+## for the files in this folder.
+trainInstancesFile = "./instances-list.txt"
+
+## Executable called for each configuration that executes the target algorithm
+## to be tuned. See the templates and examples provided.
+targetRunner = "./target-runner"
+
+## If the target algorithm is deterministic, configurations will be evaluated
+## only once per instance.
+deterministic = 0
+
+## Maximum number of runs (invocations of targetRunner) that will be
+## performed. It determines the maximum budget of experiments for the tuning.
+maxExperiments = 200
+
+## Number of calls to targetRunner to execute in parallel. Values 0 or 1
+## mean no parallelization.
+parallel = 4
+
+
+## END of scenario file
+############################################################################
+
