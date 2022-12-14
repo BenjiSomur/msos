@@ -73,4 +73,8 @@ def get_fitness(_schdl):
             continue
         if _schdl[_key][-1][-1][1] >= _max:
             _max = _schdl[_key][-1][-1][1]
-    return 1 / _max
+    if _max > 0:
+        return round(1 / _max, 5)
+    else:
+        return round(1/10000000, 5)
+

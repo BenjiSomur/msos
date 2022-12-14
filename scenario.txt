@@ -38,7 +38,7 @@ deterministic = 0
 
 ## Maximum number of runs (invocations of targetRunner) that will be
 ## performed. It determines the maximum budget of experiments for the tuning.
-maxExperiments = 200
+maxExperiments = 1000
 
 ## Number of calls to targetRunner to execute in parallel. Values 0 or 1
 ## mean no parallelization.
