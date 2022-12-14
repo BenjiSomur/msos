@@ -1,0 +1,6 @@
+*.txt~
+msos/__pycache__/
+msos/*.py~
+tmp/
+target-runner~
+*.sh~
